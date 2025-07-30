@@ -488,6 +488,7 @@ body {
 
 .aboutUs__ctaBtn {
     margin-top: 38px;
+    border: 1px solid var(--bgLightColor);
 }
 
 /* ===== DENTIST INFO ===== */
