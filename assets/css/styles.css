@@ -135,10 +135,11 @@ body {
     background-color: var(--bgDarkColor);
 }
 
-/* nav bar */
-.header__navBar {
-    margin-left: 318px;
+.pageHeader .pj-sectionContent {
+    justify-content: space-between;
 }
+
+/* nav bar */
 
 .header__navItem {
     display: block;
@@ -146,29 +147,31 @@ body {
     padding: 13px 21px;
 }
 
-.header__navItem::before {
+.header__navItem--active::before {
     content: "";
-    display: none;
+    display: block;
     position: absolute;
     left: 5px;
-    top: calc(50% - 5px);
+    top: calc(50% - 4px);
     height: 6px;
     width: 6px;
     border-radius: 50%;
     background-color: var(--whiteText);
 }
-.header__navItem:hover::before {
-    display: block;
-}
+/* .header__navItem:hover::before {
+    
+} */
+
+.header__navItem--active,
 .header__navItem:hover {
-    font-weight: 400;
+    /* font-weight: 400; */
+    text-shadow: 1px 0 0 currentColor;
     color: var(--whiteText);
 }
 
 /* action group */
 .header__actionGroup {
     gap: 28px;
-    margin-left: auto;
 }
 
 .header__login {
@@ -864,7 +867,6 @@ a.footer__Item:hover {
 }
 
 .footer__emailSubmitBtn {
-    
     padding: 10px 20px;
     border-radius: 4px;
     margin-left: 12px;
