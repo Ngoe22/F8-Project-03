@@ -524,20 +524,30 @@ body {
 
 .dentistInfo__item {
     display: block;
+    border-radius: 6px;
+    padding-bottom: 10px;
 }
 
 .dentistInfo__avatarBlock {
     padding-top: 30px;
     border-radius: 6px;
     background-color: var(--bgBlurLight);
+    overflow: hidden;
 }
 
 .dentistInfo__avatar {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: 290px;
     border-radius: 6px;
     object-fit: cover;
+}
+.dentistInfo__item:hover .dentistInfo__avatar {
+    transform: scale(1.1);
+    transition: 1s;
+}
+.dentistInfo__item:hover {
+    box-shadow: 0 1px 10px 2px rgba(0, 0, 0, 0.3);
 }
 
 .dentistInfo__name {
@@ -569,34 +579,29 @@ body {
 }
 
 .CTA .pj-sectionContent {
-    position: relative;
+    /* position: relative; */
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: space-between;
+    padding: 0 70px;
     border-radius: 5px;
     background-color: var(--bgLightColor);
 }
 
 /* media */
 .CTA__mediaBlock {
-    position: absolute;
-    left: 70px;
-    bottom: 0px;
-    width: 284px;
-    height: 522px;
+    display: block;
 }
 .CTA__mediaBlock img {
     display: block;
+    width: 284px;
+    height: 522px;
+    margin-top: -95px;
     object-fit: cover;
 }
 
-/* content */
-.CTA__contentBlock {
-    padding: 76px 70px;
-}
-
 .CTA__heading {
-    width: 489px;
+    max-width: 489px;
     color: var(--whiteText);
     font-size: 5rem;
     font-weight: 600;
