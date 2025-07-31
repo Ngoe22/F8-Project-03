@@ -391,7 +391,6 @@ body {
 }
 
 .howItWorks__item {
-    position: relative;
     padding: 42px;
     border: 16px solid var(--bgBlurLight);
 }
@@ -426,7 +425,8 @@ body {
 
 /* list--hover */
 .howItWorks__item:hover {
-    top: -16px;
+    /* top: -16px; */
+    transform: translateY(-16px);
     /* margin-top: -16px; */
     border-color: var(--bgLightColor);
     transition: 2s;
