@@ -837,6 +837,10 @@ a.footer__Item:hover {
     text-underline-offset: 2px;
 }
 
+a.footer__Item {
+    white-space: nowrap;
+}
+
 .footer__socialGroup {
     display: flex;
     gap: 10px;
@@ -863,13 +867,26 @@ a.footer__Item:hover {
     transition: 1s;
 }
 
+.footer__formWrap {
+    display: flex;
+}
+
 .footer__emailInput {
-    width: 200px;
+    width: 60%;
     padding: 11px 21px;
     border: 1px solid var(--footerTextColor);
     border-radius: 4px;
     background-color: transparent;
     color: white;
+}
+
+.footer__emailInput input::placeholder {
+    color: #9ca8b1;
+    font-family: "Open Sans";
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
 }
 
 .footer__emailSubmitBtn {
