@@ -137,7 +137,11 @@ button {
     padding: 0 0;
     color: currentColor;
     background-color: transparent;
-    border: 0 ;
+    border: 0;
     cursor: pointer;
+    font-family: inherit;
+}
+
+input {
     font-family: inherit;
 }
