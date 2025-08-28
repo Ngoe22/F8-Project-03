@@ -128,7 +128,7 @@
     }
     .CTA__desc,
     .CTA__heading {
-        max-width: auto;
+        max-width: none;
         width: 100%;
     }
     .CTA__downloadBlock {
