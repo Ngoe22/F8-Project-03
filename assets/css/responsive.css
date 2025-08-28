@@ -1,0 +1,279 @@
+/* PC  first */
+
+/* PC */
+@media screen and (min-width: 992px) {
+    /* header */
+    .p_navBar__switchBtn {
+        display: none;
+    }
+    /* hero */
+    /* service */
+    /* hiw */
+    /* about */
+    /* member */
+    /* cta */
+    /* blog */
+    .p_blogHeader__controls {
+        display: none;
+    }
+    /* booking */
+    /* footer */
+}
+
+/* TABLET & MOBILE */
+@media screen and (max-width: 991.98px) {
+    /* header */
+    .p_navBar__switchBtn {
+        display: block;
+    }
+    .header__navBar {
+        display: none;
+    }
+    /* hero */
+    .hero .pj-sectionContent {
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .hero__infoBlock {
+        width: 100%;
+        text-align: center;
+    }
+    .hero__imgBlock {
+        width: 100%;
+        justify-content: center;
+    }
+    .heo__mainImg1 {
+        width: 40%;
+        height: auto;
+    }
+    .heo__mainImg2 {
+        width: 30%;
+        height: auto;
+    }
+    /* service */
+
+    .services__desc {
+        width: 100%;
+    }
+
+    .services__mediaSide {
+        display: none;
+    }
+    .services_bodyBlock {
+        justify-content: center;
+    }
+
+    .services__actionBtn {
+        margin: 30px auto 0;
+        display: block;
+        width: fit-content;
+    }
+    /* hiw */
+
+    .howItWorks__item {
+        width: 100%;
+    }
+    /* about */
+    .aboutUs .pj-sectionContent {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .aboutUs__content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .aboutUs__mediaBlock {
+        display: flex;
+        justify-content: space-between;
+        height: 300px;
+    }
+
+    .aboutUs__mediaImg1 {
+        height: 100%;
+        width: 49%;
+    }
+
+    .aboutUs__mediaImg2 {
+        height: 100%;
+        width: 49%;
+        margin: 0;
+    }
+
+    .howItWorks__desc {
+        width: 100%;
+    }
+    /* member */
+    .dentistInfo__list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .dentistInfo__avatar {
+        margin: 0 auto;
+    }
+    /* cta */
+    .CTA {
+        padding: 50px 0;
+    }
+    .CTA .pj-sectionContent {
+        padding: 50px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .CTA__mediaBlock {
+        display: none;
+    }
+    .CTA__desc,
+    .CTA__heading {
+        max-width: auto;
+        width: 100%;
+    }
+    .CTA__downloadBlock {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* blog */
+    .blog .pj-sectionContent {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .blogHeader__title {
+        width: 100%;
+    }
+
+    .blogHeader__link {
+        display: block;
+        text-align: center;
+    }
+
+    .blogHeader__controls {
+        display: none;
+        justify-content: center;
+    }
+
+    .p_blogHeader__controls {
+        display: flex;
+    }
+    .blog__list {
+        flex-wrap: wrap;
+        gap: 1%;
+    }
+    .blog__card {
+        width: 49%;
+    }
+    /* booking */
+    /* footer */
+    .footer__content {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer__copyWrite {
+        margin-top: 10px
+        ;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    /* header */
+    /* hero */
+    /* service */
+    /* hiw */
+    .howItWorks__list {
+        grid-template-columns: 1fr 1fr;
+    }
+    /* about */
+    /* member */
+    /* cta */
+    /* blog */
+    /* booking */
+    /* footer */
+}
+
+/* /* MOBILE */
+@media screen and (max-width: 767.98px) {
+    /* header */
+    .p_navBar__action {
+        display: block;
+    }
+    .header__actionGroup {
+        display: none;
+    }
+    /* hero */
+    .hero__bookBtn {
+        margin: 30px 0 15px;
+    }
+
+    .hero__phoneContact {
+        display: block;
+    }
+    /* service */
+    /* hiw */
+    .howItWorks__list {
+        grid-template-columns: 1fr;
+    }
+    /* about */
+    .aboutUs {
+        padding-top: 50px;
+    }
+    /* member */
+    .dentistInfo__heading {
+        font-size: 3.5rem;
+    }
+    /* cta */
+    .CTA__heading {
+        font-size: 3.5rem;
+    }
+    /* blog */
+    /* booking */
+    /* footer */
+    .booking__desc {
+        width: 100%;
+    }
+}
+
+/* /* MOBILE small */
+@media screen and (max-width: 575.98px) {
+    /* header */
+    /* hero */
+    .hero__heading {
+        font-size: 4rem;
+    }
+    /* service */
+    .services__heading {
+        font-size: 3.5rem;
+    }
+    .services__itemIcon {
+        height: 50px;
+        width: 50px;
+    }
+    .services__serviceItem {
+        width: 100%;
+    }
+    /* hiw */
+    .howItWorks__heading {
+        font-size: 3.5rem;
+    }
+    /* about */
+    .aboutUs__heading {
+        font-size: 3.5rem;
+    }
+    /* member */
+    .dentistInfo__list {
+        grid-template-columns: 1fr;
+    }
+    /* cta */
+    /* blog */
+    .blog__card {
+        width: 100%;
+    }
+    /* booking */
+    /* footer */
+    .footer__content {
+        grid-template-columns: 1fr ;
+    }
+}

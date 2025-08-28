@@ -118,13 +118,23 @@
 
         <!-- =========== Style =========== -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
-
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
         <!-- Else  -->
     </head>
     <body>
         <!-- HEADER -->
         <header class="pageHeader">
             <div class="cm-flexLine pj-sectionContent">
+                <label for="p_navBar__switch" class="p_navBar__switchBtn">
+                    <i class="fa-solid fa-bars" style="font-size: 3.5rem"></i>
+                </label>
+                <input
+                    type="checkbox"
+                    id="p_navBar__switch"
+                    class="p_navBar__switch"
+                    hidden
+                />
+
                 <a href="#">
                     <img
                         style="display: block"
@@ -144,6 +154,28 @@
                 <div class="cm-flexLine header__actionGroup">
                     <button class="header__login">Log in</button>
                     <a href="#!" class="pj-btn header__signUp">Sign Up</a>
+                </div>
+                <!-- for phone -->
+                <label class="p_navBar__overlay" for="p_navBar__switch"></label>
+                <div class="p_navBar">
+                    <a href="#" class="p_navBar__logo">
+                        <img
+                            style="display: block"
+                            src="./assets/img/logo/brand-logoWithName.svg"
+                            alt="shine Smile"
+                            class="header__logo"
+                        />
+                    </a>
+                    <div class="p_navBar__list">
+                        <a href="#" class="p_navBar__item">Home</a>
+                        <a href="#services" class="p_navBar__item">Services</a>
+                        <a href="#aboutUs" class="p_navBar__item">About</a>
+                        <a href="#dentistInfo" class="p_navBar__item">
+                            Doctors
+                        </a>
+                    </div>
+                    <button class="p_navBar__action">Login</button>
+                    <button class="p_navBar__action">Sign Up</button>
                 </div>
             </div>
         </header>
@@ -565,6 +597,14 @@
                             </div>
                         </article>
                     </div>
+                    <div class="pj-movingBtn blogHeader__controls p_blogHeader__controls">
+                            <button class="pj-movingBtn__left">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button class="pj-movingBtn__right">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
                 </div>
             </section>
             <!-- BOOKING -->
@@ -693,11 +733,13 @@
                                         name="email"
                                         id="email"
                                         placeholder="Enter your email ..."
-                                        style="background-color: transparent;
-                                        border: 0;
-                                        width: 100%;
-                                        outline: none;
-                                        color: #9ca8b1;"
+                                        style="
+                                            background-color: transparent;
+                                            border: 0;
+                                            width: 100%;
+                                            outline: none;
+                                            color: #9ca8b1;
+                                        "
                                     />
                                 </form>
                                 <button class="pj-btn footer__emailSubmitBtn">
